@@ -1,0 +1,8 @@
+checks:
+  - uses: VerifyFileNames
+    with:
+      style: "camelCase"
+      baseDir: "src"
+      extensions: "go,js,jsx,ts,tsx"
+      ignore: "node_modules,build,dist"
+      ignoreFiles: "package.json,package-lock.json"
