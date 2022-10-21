@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 type Check interface {
+	GetName() string
 	InitSettings(map[interface{}]interface{})
 	Run(inputs CheckInputs) error
 }

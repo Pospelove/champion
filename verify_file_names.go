@@ -9,6 +9,10 @@ type VerifyFileNames struct {
 	ignoreFiles string
 }
 
+func (v *VerifyFileNames) GetName() string {
+	return "VerifyFileNames"
+}
+
 func (v *VerifyFileNames) InitSettings(with map[interface{}]interface{}) {
 	v.style = with["style"].(string)
 	v.baseDir = with["baseDir"].(string)
