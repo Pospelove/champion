@@ -7,8 +7,8 @@ func GetLastFileExtension(path string) string {
 	if len(tokens) <= 1 {
 		return ""
 	}
-	// if starts with ".", return empty string
-	if tokens[0] == "" {
+	startsWithDot := tokens[0] == ""
+	if startsWithDot {
 		return ""
 	}
 	return tokens[len(tokens)-1]
